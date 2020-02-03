@@ -12,7 +12,7 @@
 
 3. Use of return statement
 
-Visit https://github.com/lhundt-ung/CS1411 to obtain directions on how to sync the base assignment file to your lab machine.
+Visit https://github.com/lhundt-ung/CS1411-spring2020 to obtain directions on how to sync the base assignment file to your lab machine.
 
 If you have been successful in cloning the directory as in Assingment1, you only need to run git pull inside of CS1411
 

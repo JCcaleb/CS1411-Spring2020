@@ -4,6 +4,8 @@ if($equityStr -gt 50)
 { Write-Host "Greater than 50? - True" }
 elseif($equityStr -lt 50)
 { Write-Host "Less than 50? - True" }
+elseif($equityStr -eq 20)
+{ Write-Host "Must be 20 - True" }
 else
 { Write-Host "Number must equal 50!" }
 
@@ -39,6 +41,7 @@ elseif($containmentStr -contains "peach")
 { Write-Host "Peach found!" }
 
 
+
 #slide 10
 $a = Read-Host -Prompt 'Enter a number'
 Switch ($a)
@@ -59,11 +62,11 @@ if($a -ne 1 -and $a -ne 2 -and $a -ne 3 -and $a -ne 4){ “No Match Found”}
 
 
 #Slide 12
-for($i = 0; $i -le 5; $i++)
+for($i = 0; $i -le 1; $i)
 { Write-Host "i equals: $i" }
 
 #Slide 13
-$web = Invoke-WebRequest "https://ung.edu"
+$web = Invoke-WebRequest "https://ung.edu" -UseBasicParsing
 $webArr = $web.RawContent.Split("`r`n")
 foreach($line in $webArr)
 { if($line -like "*.js*")
